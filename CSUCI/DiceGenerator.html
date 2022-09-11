@@ -1,0 +1,30 @@
+<?xml version = "1.0" encoding = "utf-8">
+<!DOCTYPE html>
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Dice Chance Generator</title>
+		<script type = "text/javascript">
+		
+		var input = window.prompt( "Type OK to start" );
+		var counter = 1;
+
+		while ( input != -1 )
+		{			
+
+			input = window.prompt( "Enter 0 to roll dice, -1 to quit" );
+			var roll = Math.floor( 1 + Math.random() * 6 );
+
+			document.write( "Roll number " + counter + "= " + roll +
+			".<br />" );
+			
+			counter++;
+		}
+
+		// -->
+		</script>
+	</head>
+	<body>
+		<p><h3>Click refresh on your browser</h3></p>
+	</body>
+</html>

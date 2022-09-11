@@ -1,0 +1,53 @@
+<?xml version = "1.0" encoding = "utf-8">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>Math Functions</title>
+		<center>
+		<script type = "text/javascript">
+		<!--		
+			
+		function getOption()
+		{
+			var inputBox = document.getElementById( "inputBox" );
+			var number = parseInt( inputBox.value );
+			var answer;
+			var myForm = document.getElementById( "answerArea" );
+
+			answer = "ABS = " + Math.abs( number ) + "\nCEIL = " + Math.ceil( number ) + 
+				"\nCOS = " + Math.cos( number ) + "\nEXP = " + Math.exp( number ) +
+				"\nFLOOR = " + Math.floor( number ) + "\nLOG = " + Math.log( number ) +
+				"\nROUND = " + Math.round( number ) + "\nSIN = " + Math.sin( number ) +
+				"\nSQRT = " + Math.sqrt( number ) + "\nTAN = " + Math.tan( number );
+
+
+			myForm.answerField.value = answer;			
+		}
+
+		// -->
+		</script>
+		</center>
+	</head>
+	<body>
+			<p><h4>Please enter a number and click "Answer".</h4>
+			<br />
+			<br />			
+		<form id = "mathFunctions" action = "">
+			<label>Number:
+			<input id = "inputBox" type = "text" value = "" /></label><br />
+			<input type = "button" name = "button" onclick = "getOption()" value = "Answer" />
+			<br />
+		</form>
+		<form id = "answerArea" action = ""><div>
+			<textarea name = "answerField" rows = "30" cols = "60"></textarea></div>
+		</form>
+			</p>
+		
+	
+
+	</body>
+</html>
+

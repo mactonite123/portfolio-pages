@@ -1,0 +1,71 @@
+<?xml version = "1.0" encoding = "utf-8">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+
+	<head>
+	<style type = "text/css">
+	.blueText	{ color: blue }
+	.yellowBackgd	{ background-color: yellow; }
+	.redBackgd	{ background-color: red; }
+	.blueBackgd	{ background-color: blue; }
+	.yellowText	{ color: yellow; }
+	.redText		{ color: red; }
+	.blueText		{ color: blue; }
+	.textDirRtl		{ direction: rtl; }
+	.textDirLtr		{ direction: ltr; }
+	</style>
+	
+	<title>12-7</title>		
+	<script type = "text/javascript">
+	<!--		
+	
+		var tracker = 0;
+		
+		function changeColor()
+		{
+		var backColors = new Array( "yellowBackgd", "redBackgd", "blueBackgd" );
+		var randomNumber = Math.floor( Math.random() * backColors.length );
+		var newColor = backColors[ randomNumber ];
+		document.body.className = newColor;				
+		}
+
+		function changeText()
+		{
+		var textColors = new Array( "yellowText", "redText", "blueText" );
+		var randomNumber = Math.floor( Math.random() * textColors.length );
+		var newTextColor = textColors[ randomNumber ];
+		document.getElementById( "hello" ).className = newTextColor;					
+		}
+		
+		function changeTextDir()
+		{
+		if ( tracker == 0 )
+		{
+		document.getElementById( "dirText" ).className = "textDirRtl";
+		tracker = 1;
+		}
+		else if ( tracker == 1 )
+		{
+		document.getElementById( "dirText" ).className = "textDirLtr";		
+		tracker = 0;
+		}
+		}
+	// -->
+	</script>
+	</head>
+	<body>
+		<div>
+		<input type = "button" onclick = "changeColor()" value = "Change Random Background Color">
+		</div><br /><br />
+		<div id = "hello">Please click button to change background to a random color.</div>
+		<br /><br />
+		<input type = "button" onclick = "changeText()" value = "Click here to change text color">
+		<br /><br />
+		<div id = "dirText">This is a test sentence. Please click button below to change text direction.</div>
+		<br /><br />
+		<input type = "button" onclick = "changeTextDir()" value = "Click here to change text direction">
+	</body>
+</html>
+

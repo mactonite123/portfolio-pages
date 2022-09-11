@@ -1,0 +1,57 @@
+<?xml version = "1.0" encoding = "utf-8">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>11.7</title>
+		<script type = "text/javascript">
+		<!--
+		function story()
+		{
+		article = new Array( "the", "a", "one", "some", "any" );
+		noun = new Array( "boy", "girl", "dog", "town", "car" );
+		verb = new Array( "drove", "jumped", "ran", "walked", "skipped" );
+		preposition = new Array( "to", "from", "over", "under", "on" );
+		
+		var capArticle;
+		var capLetter;
+
+		var myForm = document.getElementById( "myForm" );
+		
+		myForm.storyField.value += "Once upon a time...\n";
+
+		for ( var i = 0; i < 20; ++i )
+		{
+			capArticle = article[ Math.floor( Math.random() * 5 ) ];
+			capLetter = capArticle.substr( 0, 1 );
+			capLetter = capLetter.toUpperCase();
+			capArticle = capLetter + capArticle.substr( 1 );
+			
+			myForm.storyField.value += "\n" + capArticle + " " + noun[ randomNumber() ] + " " +
+				verb[ randomNumber() ] + " " + preposition[ randomNumber() ] + " " +
+				article[ randomNumber() ] + " " + noun[ randomNumber() ] + ". ";
+		}
+		myForm.storyField.value += "\n\nTHE END.";
+		}
+		
+		function randomNumber ()
+		{
+			return Math.floor( Math.random() * 5 );
+		}		
+		// -->
+		</script>
+	</head>
+	<body>
+	<form id = "myForm" action = "">
+		<div>
+		<textarea name = "storyField" rows = "50" cols = "40"></textarea>
+		<br />
+		<input type = "button" onClick = story() value = "Story" />
+		</div>
+	</form>
+
+	</body>
+</html>
+
