@@ -1,3 +1,9 @@
+:root {
+    /* mainText */
+    --text: #FFCB9A;
+}
+
+/* Layout */
 .container {    
     display: flex;    
     min-height: 100vh;
@@ -11,10 +17,15 @@
 .container > .ctr {
     flex: 0 0 58vw; 
     background-color: #2C3531;
-    color: #FFCB9A;
+    color: var(--text);
     text-align: center;
 }
 
-.container > .lNav {
-    z-index: -1;
+/* Styling */
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
