@@ -1,0 +1,20 @@
+.container {    
+    display: flex;    
+    min-height: 100vh;
+}
+
+.container > .lNav, .container > .rSideSpace {
+    width: 21vw;
+    background-color: #D1E8E2;
+}
+
+.container > .ctr {
+    flex: 0 0 58vw; 
+    background-color: #2C3531;
+    color: #FFCB9A;
+    text-align: center;
+}
+
+.container > .lNav {
+    z-index: -1;
+}
