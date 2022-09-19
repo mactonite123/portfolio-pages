@@ -7,7 +7,7 @@ html {
   }
 
   #piano {
-    background-color: #00471b;
+    background-color: var(--bgMedium);
     width: 992px;
     height: 290px;
     margin: 80px auto;
@@ -43,13 +43,7 @@ html {
     height: 100px;
     border-radius: 0 0 3px 3px;
   }
-
-  .logo {
-    width: 200px;
-    position: absolute;
-    top: 23px;
-  }
-
+ 
   @media (max-width:768px)
 {
     #piano {
@@ -72,4 +66,5 @@ html {
     .keys {
       width: 633px;
     }
-  }
+  }  
+

@@ -1,9 +1,13 @@
 :root {
-    /* mainText */
+    /* Colors */
     --text: #FFCB9A;
+    --textDark: #D9B08C;
+    --bgLight: #D1E8E2;
+    --bgMedium: #116466;
+    --bgDark: #2C3531;
 }
 
-/* Layout */
+/* Main Page Layout */
 .container {    
     display: flex;    
     min-height: 100vh;
@@ -11,21 +15,37 @@
 
 .container > .lNav, .container > .rSideSpace {
     width: 21vw;
-    background-color: #D1E8E2;
+    background-color: var(--bgLight)
 }
 
 .container > .ctr {
     flex: 0 0 58vw; 
-    background-color: #2C3531;
+    background-color: var(--bgDark);
     color: var(--text);
-    text-align: center;
+    align-content: center;
+}
+
+/* Center Tiles */
+#midTilesContainer {
+    display: flex;
+    max-width: 58vw;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
+.midTiles {
+    background-color: var(--bgLight);
+    height: 500px;
+    width: 300px;
+    margin: 30px 10px 30px 10px;
 }
 
 /* Styling */
-a {
+.lnav > a {
     text-decoration: none;
 }
 
-li {
+.lnav > li {
     list-style: none;
 }
