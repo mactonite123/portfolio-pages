@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    display: block;
+}
+
+nav > ul {
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    /* background-color: darkslategray; */
+ }
+
+#container {
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+}
+
+#header-img {
+    max-width: 10em;
+    max-height: 10em;
+}
+
+@media (max-width: 1000px) {
+    #container {
+        background-color: chocolate;
+    }
+}

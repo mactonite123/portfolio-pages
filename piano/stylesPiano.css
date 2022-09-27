@@ -6,6 +6,11 @@ html {
     box-sizing: inherit;
   }
 
+  #ivories {
+    position: absolute;
+    top: 23px;
+  }
+
   #piano {
     background-color: var(--bgMedium);
     width: 992px;
