@@ -25,6 +25,10 @@ a {
     margin: rem;
 }
 
+#nav a:hover {
+    opacity: 40%;
+}
+
 li {
     display: list-item;
     margin: 10px;
