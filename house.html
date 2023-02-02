@@ -1,0 +1,58 @@
+<html>    
+<head><style></style></head>
+<body>
+
+ <canvas id="my-canvas" width="300" height="150"></canvas>
+<script>
+    const canvas = document.getElementById("my-canvas");
+const ctx = canvas.getContext('2d');
+
+ctx.fillStyle = 'blue';
+ctx.fillRect(0, 0, 300, 150);
+ctx.fillStyle = 'green';
+ctx.fillRect(0, 120, 300, 30);
+ctx.fillStyle = 'yellow';
+ctx.fillRect(30, 50, 100, 80);
+ctx.fillStyle = 'pink';
+ctx.moveTo(80, 10);
+ctx.lineTo(150, 50);
+ctx.lineTo(10, 50);
+ctx.fill();
+ctx.strokeStyle = 'black';
+ctx.strokeRect(50, 80, 30, 50);
+</script>
+<input type = "file">
+</body>
+
+<input type="range"><br>
+<input type="search">
+
+<form id="form1">
+    <h1>Form</h1>
+
+    <label for="name">Your Full Name</label>
+    <input id="name" type="text" name="name">
+
+    <input type="submit">
+    <input type="text" name="secret" autocomplete="on">
+</form>
+<pre id="form-output">
+    Send the form to view the output
+</pre>
+
+<h1>Datalist</h1>
+
+    <label for="fav-color">
+    <input id="fav-color" name="favColor" list="colors">
+    <datalist id="colors">
+        <option value="red">
+        <option value="yellow">
+        <option value="pink">
+        <option value="purple">
+    </datalist>
+
+    
+
+    </label>
+
+</html>
